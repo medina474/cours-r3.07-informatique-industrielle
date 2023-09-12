@@ -35,6 +35,16 @@ do
   i++;
 } while (i < 10)
 ```
+### Boucle for
+
+Le for permet de placer au mˆeme endroit l’initialisation, le test de continuit´e
+et l’incr´ementation.
+
+f o r (i=0;i <10; i++)
+{
+printf (" valeur : %d\n",i) ;
+}
+Il est tout `a fait possible de ne pas mettre
 
 ## Conditions
 
@@ -49,3 +59,21 @@ L’instruction `break` sor directement de la boucle d'instruction.
 L’instruction `continue` retourne directement à l’évaluation de la condition d'une boucle. Elle permet de se passer de l'exécution de la fin du bloc d'instruction.
 
 ### goto
+
+L’instruction `goto` permet de sauter à un point précis du programme.  Pour ce faire, le langage C nous permet de marquer des instructions à l’aide d’étiquettes (en: label). Une étiquette n’est rien d’autre qu’un nom choisi par nos soins suivi du catactère `:`.
+
+Bien qu’utile dans certaines circonstances, sachez que l'utilisation de l’instruction `goto` est **fortement** déconseillée, principalement pour deux raisons :
+
+- mis à part dans des cas spécifiques, il est possible de réaliser la même action de manière plus claire à l’aide de structures de contrôles ;
+- l’utilisation de cette instruction peut amener votre code à être plus difficilement lisible et, dans les pires cas, en faire un code spaghetti.
+
+Elle est essentiellement utilisée dans le cas de la gestion des exceptions et des erreurs.
+
+### switch
+
+L’expression est compar´ee `a l’´etiquette. L’ex´ecution s’effectue jusqu’`a la fin du switch sauf si une instruction break est rencontr´ee.
+
+Si aucune ´etiquette ne correspond `a l’expression, l’´etiquette par d´efaut est s´electionn´ee.
+
+la variable utilis´ee avec l’instruction switch peut ˆetre du type int
+(ou compatible) ou char.
