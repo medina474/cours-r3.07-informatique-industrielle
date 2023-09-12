@@ -4,7 +4,7 @@ date: 2022-11-27
 draft: false
 ---
 
->Une variable est un élément qui associe un **identifiant** à une **valeur**.
+>Une variable est un espace de stockage dans la mémoire de l'ordinateur qui associe un **identifiant** à une **valeur**.
 {.definition}
 
 ### Caractéristiques

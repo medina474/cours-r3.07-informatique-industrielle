@@ -227,16 +227,16 @@ int main (int argc , char *argv[])
 }
 ```
 
-%d Entier affich´e en d´ecimal
-%o Entier affich´e en octal (base 8)
-%x Entier affich´e en hexad´ecimal (base 16)
-%ld Entier long affich´e en d´ecimal
-%lo Entier long affich´e en octal (base 8)
-%lx Entier long affich´e en hexad´ecimal (base 16)
-%f Flottant ou double affich´e en point d´ecimal
-%e Flottant ou double affich´e en exponentielle
-%Lf Double long affich´e en point d´ecimal
-%Le Double long affich´e en exponentielle
-%c Caract`ere
-%s Chaˆıne de caract`eres
+%d Entier affiché en décimal
+%o Entier affiché en octal (base 8)
+%x Entier affiché en hexadécimal (base 16)
+%ld Entier long affiché en décimal
+%lo Entier long affiché en octal (base 8)
+%lx Entier long affiché en hexadécimal (base 16)
+%f Flottant ou double affiché en point décimal
+%e Flottant ou double affiché en exponentielle
+%Lf Double long affiché en point décimal
+%Le Double long affiché en exponentielle
+%c Caractère
+%s Chaˆıne de caractères
 %p Adresse

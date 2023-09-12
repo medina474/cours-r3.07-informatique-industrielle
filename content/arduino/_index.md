@@ -10,7 +10,7 @@ La liste des fonctions permettant de gérer cette temporisation est décrite dan
 
 ### Création de la temporisation
 
-La création de la temporisation prend en param`etre la durée en millisecondes de la temporisation. Elle doit se faire en haut du fichier et en dehors de toute fonction pour ˆetre utilisable partout dans le code.
+La création de la temporisation prend en paramètre la durée en millisecondes de la temporisation. Elle doit se faire en haut du fichier et en dehors de toute fonction pour ˆetre utilisable partout dans le code.
 
 Prototype de la fonction : TemporisationRetardMontee nomDeLaTempo(int duree)
 1 // Exemple de creation d’une temporisation de 2.5s

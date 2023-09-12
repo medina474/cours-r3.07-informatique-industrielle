@@ -1,14 +1,16 @@
 ---
-title: "Info 3"
+title: "Ressource R3.07 : Informatique Industrielle"
 date: 2022-11-05T10:29:01+01:00
 draft: false
 ---
 
 Qu'est ce qu'un [programme](programme) en C
 
-[variables](variables)
+[Variables](variables)
 
-[opérateurs](opérateurs)
+[Opérateurs](opérateurs)
+
+[Structure de contrôle](control)
 
 [math](math)
 
