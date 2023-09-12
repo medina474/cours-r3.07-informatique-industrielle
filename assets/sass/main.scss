@@ -21,7 +21,7 @@ a:hover { text-decoration: underline; }
 @media (prefers-color-scheme: light) {
   body {
     background:  #fffffa;
-    color: #212529; 
+    color: #212529;
   }
 }
 
@@ -79,4 +79,3 @@ figcaption {
 }
 
 @import 'blockquote';
-@import 'prism';

@@ -4,8 +4,9 @@ date: 2022-11-05T10:29:01+01:00
 draft: false
 ---
 
-[variables](variables)
+Qu'est ce qu'un [programme](programme) en C
 
+[variables](variables)
 
 [opérateurs](opérateurs)
 
