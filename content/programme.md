@@ -61,23 +61,29 @@ Si votre programme utilise des fonctions d’une bibliothèque C quelconque
 Pour cela, il faut inclure le fichier d’en-tˆetes.
 
 
-Fichier xxxx.c
-# include < stdio .h >
-i n t main ( i n t argc , c h a r * argv [])
+```C
+#include <stdio .h>
+
+int main (int argc , char *argv[])
 {
-printf (" Hello World !!! ") ;
+  printf (" Hello World !!! ") ;
 }
+```
+
 L’édition de liens (linkage en anglais) lie chaque librairie `a vos fichiers compilés pour générer l’exécutable .exe (Windows) ou .out (Linux).
 
 Si votre programme utilise des fonctions d’une bibliothèque C que vous avez vous même créée il faut que le code de ces fonctions soit intégré `a votre programme.
 Pour cela, il faut inclure le fichier d’en-tˆetes.
 
-Fichier xxxx.c
-# include " somme .h"
-i n t main ( i n t argc , c h a r * argv [])
+```C
+#include "somme.h"
+
+int main ( int argc , char * argv [])
 {
-printf ("%f",somme (4 ,5) ) ;
+  printf ("%f", somme (4 ,5) ) ;
 }
+```
+
 L’édition de liens (linkage en anglais) lie chaque librairie `a vos fichiers compilés pour générer l’exécutable (.exe sous Windows) ou .out (Linux).
 
 ##
