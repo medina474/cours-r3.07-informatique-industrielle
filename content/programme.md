@@ -57,7 +57,7 @@ La compilation de chaque fichier .c et de son .h associé génère un fichier .o
 un programme est souvent séparé en plusieurs fichiers source, pour des raisons de clarté mais aussi parce qu'il fait généralement appel à des librairies de fonctions standard déjà écrites. Une fois chaque code source compilé en fichiers objets, il faut les lier entre eux. L'édition de liens produit alors un fichier dit exécutable.
 
 Si votre programme utilise des fonctions d’une bibliothèque C quelconque
-(printf, scanf, ....) il faut que le code de ces fonctions soit intégré `a votre programme.
+(printf, scanf, ....) il faut que le code de ces fonctions soit intégré à votre programme.
 Pour cela, il faut inclure le fichier d’en-tˆetes.
 
 
@@ -70,9 +70,9 @@ int main (int argc , char *argv[])
 }
 ```
 
-L’édition de liens (linkage en anglais) lie chaque librairie `a vos fichiers compilés pour générer l’exécutable .exe (Windows) ou .out (Linux).
+L’édition de liens (linkage en anglais) lie chaque librairie à vos fichiers compilés pour générer l’exécutable .exe (Windows) ou .out (Linux).
 
-Si votre programme utilise des fonctions d’une bibliothèque C que vous avez vous même créée il faut que le code de ces fonctions soit intégré `a votre programme.
+Si votre programme utilise des fonctions d’une bibliothèque C que vous avez vous même créée il faut que le code de ces fonctions soit intégré à votre programme.
 Pour cela, il faut inclure le fichier d’en-tˆetes.
 
 ```C
@@ -84,6 +84,4 @@ int main ( int argc , char * argv [])
 }
 ```
 
-L’édition de liens (linkage en anglais) lie chaque librairie `a vos fichiers compilés pour générer l’exécutable (.exe sous Windows) ou .out (Linux).
-
-##
+L’édition de liens (linkage en anglais) lie chaque librairie à vos fichiers compilés pour générer l’exécutable (.exe sous Windows) ou .out (Linux).

@@ -44,9 +44,11 @@ f o r (i=0;i <10; i++)
 {
 printf (" valeur : %d\n",i) ;
 }
-Il est tout `a fait possible de ne pas mettre
+Il est tout à fait possible de ne pas mettre
 
 ## Conditions
+
+if / else
 
 ### Sauts
 
@@ -71,9 +73,9 @@ Elle est essentiellement utilisée dans le cas de la gestion des exceptions et d
 
 ### switch
 
-L’expression est compar´ee `a l’´etiquette. L’ex´ecution s’effectue jusqu’`a la fin du switch sauf si une instruction break est rencontr´ee.
+L’expression est compar´ee à l’´etiquette. L’ex´ecution s’effectue jusqu’à la fin du switch sauf si une instruction break est rencontr´ee.
 
-Si aucune ´etiquette ne correspond `a l’expression, l’´etiquette par d´efaut est s´electionn´ee.
+Si aucune ´etiquette ne correspond à l’expression, l’´etiquette par d´efaut est s´electionn´ee.
 
 la variable utilis´ee avec l’instruction switch peut ˆetre du type int
 (ou compatible) ou char.

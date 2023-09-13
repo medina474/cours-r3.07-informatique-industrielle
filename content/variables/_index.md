@@ -17,19 +17,19 @@ La **déclaration**, c'est l'endroit dans le code qui défini l'existence de la 
 int age = 19;
 ```
 
-Un **nom** sous lequel la variable est déclarée. Dans cette déclaration le nom de la variable est `age`.
+Un **nom** sous lequel la variable est déclarée. Dans cette déclaration le nom de la variable est àge`.
 
 Un **type**. Dans la mémoire d'un ordinateur, toute information est stockée sous forme d'éléments binaires appelés `bit` (en: binary digit, nombre binaire). Un même ensemble de bits peut être représenté sous différentes aspects : nombre entier, nombre réel, texte, photo, vidéo, audio, ... C'est la convention d'interprétation du type qui défini la valeur de la variable.
 
-Dans cette déclaration le type de la variable `age` est un entier `int`.
+Dans cette déclaration le type de la variable àge` est un entier `int`.
 
 La **taille** associée au type. Dans le cas des types fixe, le type de la variable spécifie aussi le nombre de bits ou le nombre de mots (en: bytes, octets) utilisés.
 
-Dans cette déclaration la taille de la variable `age` est de 4 octets ou 32 bits, qui est la taille associée à un type `int`.
+Dans cette déclaration la taille de la variable àge` est de 4 octets ou 32 bits, qui est la taille associée à un type `int`.
 
 La **valeur**, c'est la valeur intrasèque des bits suivant la représentation associée au type;
 
-Dans cet exemple la valeur de la variable `age` est `10`.
+Dans cet exemple la valeur de la variable àge` est `10`.
 
 L'**adresse**, c'est l'endroit dans la mémoire de l'ordinateur où est stockée physiquement la variable.
 

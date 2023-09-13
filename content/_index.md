@@ -10,18 +10,10 @@ Qu'est ce qu'un [programme](programme) en C
 
 [Opérateurs](opérateurs)
 
-[Structure de contrôle](control)
+[Structures de contrôle](control)
 
 [math](math)
 
-[logical](fichiers)
+[Chaines de caractères](string)
 
-[fichiers](fichiers)
-
-[chaines de caractères](chainescaracteres)
-
-[tableaux](tableaux)
-
-[structure](structure)
-
-[pointeurs](pointeurs)
+[Fichiers](fichiers)
