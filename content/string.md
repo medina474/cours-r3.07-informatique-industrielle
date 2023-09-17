@@ -238,5 +238,5 @@ int main (int argc , char *argv[])
 %Lf Double long affiché en point décimal
 %Le Double long affiché en exponentielle
 %c Caractère
-%s Chaˆıne de caractères
+%s Chaîne de caractères
 %p Adresse

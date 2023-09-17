@@ -25,10 +25,10 @@ while (i < 10)
 
 ### Boucle do while
 
-La boucle `do while fonctionne comme la boucle `while`, à un détail près : la condition est évaluée **après** le bloc d'instruction. Elle s’exécutera toujours au moins une fois, alors qu’une boucle `while` peut ne pas s’exécuter si la condition est fausse dès le départ.
+La boucle `do while` fonctionne comme la boucle `while`, à un détail près : la condition est évaluée **après** le bloc d'instruction. Elle s’exécutera toujours au moins une fois, alors qu’une boucle `while` peut ne pas s’exécuter si la condition est fausse dès le départ.
 
 ```C
-i = 1;
+int i = 1;
 do
 {
   printf("\n i = %d",i);
@@ -40,10 +40,13 @@ do
 Le for permet de placer au mˆeme endroit l’initialisation, le test de continuit´e
 et l’incr´ementation.
 
-f o r (i=0;i <10; i++)
+```C
+for (i=0 ; i <10 ; i++)
 {
-printf (" valeur : %d\n",i) ;
+  printf (" valeur : %d\n",i) ;
 }
+```
+
 Il est tout à fait possible de ne pas mettre
 
 ## Conditions

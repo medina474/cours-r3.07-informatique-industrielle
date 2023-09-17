@@ -118,7 +118,7 @@ Outre les opérateurs évoqués ci-dessus, il existe quelques autres opérateurs
 Opérateur |	Description |	Exemple
 ---|---|---
 sizeof()	| Renvoie la taille d'une variable. sizeof(a), où a est un entier, renverra 4.
-&	 | Renvoie l'adresse d'une variable. &a renvoie l'adresse réelle de la variable.
+&	 | Renvoie l'adresse d'une variable. &a renvoie l'adresse mémoire de la variable.
 \*	| Pointeur de la variable	*a;
 ? :	| Expression conditionnelle.
 
