@@ -8,6 +8,17 @@
 </head>
 
 <body>
+{{- range site.Menus.main }}
+<a href="{{ .URL }}">
+  {{ .Name }}
+  {{- with .Page }}
+  {{- with .Params.version -}}
+  ({{ . }})
+  {{- end }}
+  {{- end }}
+</a>
+{{- end }}
+
   <h1>{{ .Title }}</h1>
   {{ .Content }}
   {{ partial "footer.html" . }}

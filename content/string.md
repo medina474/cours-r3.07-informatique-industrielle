@@ -1,7 +1,7 @@
 ---
 title: "String"
 date: 2022-11-30T13:44:30+01:00
-draft: true
+draft: false
 ---
 
 ## Saisie de chaine de caractères

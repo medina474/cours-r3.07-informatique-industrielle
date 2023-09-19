@@ -2,6 +2,7 @@ baseURL: 'https://r307-informatique-industrielle.gitlab.io/cours/'
 languageCode: fr-fr
 title: R3.07 Informatique industrielle
 enableRobotsTXT: true
+sectionPagesMenu: main
 markup:
   goldmark:
     renderer:

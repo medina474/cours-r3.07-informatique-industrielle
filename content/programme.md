@@ -6,7 +6,7 @@ draft: false
 
 Le langage de programmation C est apprécié pour sa performance, sa portabilité et sa flexibilité. Il est largement utilisé dans le développement de logiciels système (OS), de pilotes de périphériques, d'applications embarquées, de jeux vidéo, et dans de nombreux autres domaines. De plus, de nombreuses langues de programmation modernes, telles que C++, Java, C#, Dart, GoLang, Swift et Python, ont été influencées par le langage C.
 
-## De quoi se compose un programme ?
+## De quoi se compose un projet C ?
 
 ### Fichiers sources
 
@@ -20,7 +20,7 @@ Ils contiennent uniquement des déclarations de type, de fonctions, de macros, d
 
 Elles contiennent le code compilé des fonctions des bibliothèques. Elles ont l’extension .lib ou .dll sous Windows (.so sous Linux).
 
-## Étapes pour obtenir un programme exécutable
+## Comment obtenir une application exécutable ?
 
 ### Préprocesseur
 

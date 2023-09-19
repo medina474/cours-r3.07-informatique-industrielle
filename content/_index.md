@@ -17,3 +17,5 @@ Qu'est ce qu'un [programme](programme) en C ?
 [Chaines de caractères](string)
 
 [Fichiers](fichiers)
+
+[Pointeurs](variables/pointeurs)
