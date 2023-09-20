@@ -146,7 +146,7 @@ Le format %p de `printf` permet d'afficher l'adresse mémoire d'un pointeur.
 printf("%p\n", pointeur);
 ```
 
-Pour modifier la valeur d'une variable données en passant par le pointeur s'effectue en utilisant l'opérateur d"indérection `*`;
+Pour modifier la valeur d'une variable données en passant par le pointeur s'effectue en utilisant l'opérateur d'indirection `*`;
 
 ```C
 *pointeur = 66000000;

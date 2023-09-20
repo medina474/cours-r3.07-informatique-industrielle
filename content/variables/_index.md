@@ -156,14 +156,12 @@ long double |  16 | 128 |3.362103e-4932 |  1.189731e+4932
 
 I float : codé sur 32 bits : 1 bit de signe, 23 bits de mantisse, 8 bits
 d’exposant (de ≈ −3, 4.1038 à ≈ 3, 4.1038) - Précision de 10−7
-;
+
 
 I double : codé sur 64 bits : 1 bit de signe, 52 bits de mantisse, 11 bits
-d’exposant (de ≈ −1, 8.10308
-`a ≈ 1, 8.10308) - Précision de 10−16 ;
+d’exposant (de ≈ −1, 8.10308 à ≈ 1, 8.10308) - Précision de 10−16 ;
 
 I long double : codé sur 80 bits : 1 bit de signe, 64 bits de mantisse, 15
-bits d’exposant (de ≈ −3, 4.104932
-`a ≈ 3, 4.104932) - Précision de 10−19 ;
+bits d’exposant (de ≈ −3, 4.104932 à ≈ 3, 4.104932) - Précision de 10−19 ;
 
-I Probl`eme du codage en virgule flottante...
+I Problème du codage en virgule flottante...
