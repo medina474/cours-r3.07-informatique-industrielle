@@ -1,36 +1,42 @@
 ---
 title: "Fichiers"
-date: 2022-11-13T08:23:17+01:00
+date: 2023-09-27T08:23:17+01:00
 draft: false
 ---
 
 L'écriture et la lecture des données, le positionnement dans un fichier se fait à l'aide d'un pointeur de fichier.
 
 Les fichiers binaires : Dans un fichier dit binaire, les informations sont codées telles quelles. Ils ne sont pas éditables sauf avec un éditeur hexadécimal.
+
 Les fichiers texte : Dans un fichier dit texte, les informations sont codées en ASCII. Ces fichiers sont éditables. Le dernier octet de ces fichiers est EOF (End Of File : caractère ASCII spécifique).
 
 Lorsqu'un programme doit lire ou écrire des données dans un fichier, le chemin pris par ces données pour arriver à leur destination passe par un tampon. Ce tampon est une zone de mémoire RAM dans laquelle sont temporairement stockées les données.
+
 Cette zone tampon est gérée par une structure de type FILE. On l'utilise en déclarant un pointeur sur cette structure.
 
 ### Ouvrir un fichier
 
 Avant qu'un programme puisse manipuler un fichier, il doit commencer par l'ouvrir. Le but est d'accéder aux données, de stocker les informations dans une structure FILE afin de les réutiliser plus tard pour une lecture ou une écriture.
 
-```C
+Définition de la fonction
+
+```c
 FILE *fopen(char *nomFichier, char *modeAcces);
 ```
 
-```C
+Exemple d'utilisation
+
+```c
 #include <stdio .h>
 
-int main (int argc, char *argv[])
+void main ()
 {
   FILE *fp;
-  fp = fopen("donnees.txt", "r") ;
+  fp = fopen("donnees.dat", "r");
   if (fp == NULL)
   {
-    printf (" Erreur d'ouverture de fichier \n") ;
-    exit ( -1) ;
+    printf ("Erreur lors de l'ouverture du fichier \n") ;
+    return;
   }
   ...
 }
@@ -51,17 +57,21 @@ Pour les fichiers binaires, les modes d'accès sont : "rb", "wb", "ab", "rb+", "
 
 Quand un fichier ne sert plus, on le ferme. Cela annule sa liaison avec le pointeur FILE correspondant. La fonction retourne 0 si pas d'erreur, sinon elle retourne `EOF`.
 
-```
+Définition de la fonction
+
+```c
 int fclose(FILE *pointeurFichier);
 ```
 
-```C
+Exemple d'utilisation
+
+```c
 #include <stdio .h>
 
 void main(void)
 {
   FILE *fp;
-  fp = fopen ("donnes.dat", "r");
+  fp = fopen ("donnees.dat", "r");
   ...
   fclose (fp);
 }
@@ -71,13 +81,13 @@ Il ne faut pas oublier de fermer un fichier après utilisation car le nombre de 
 
 ### Lecture en mode caractère (fichiers ASCII)
 
-```C
+```c
 int fgetc(FILE *pointeurFichier);
 ```
 
 La fonction fgetc retourne le caractère lu sous la forme d'un entier (int). Si la valeur retournée est EOF, c'est que la fin de fichier a été atteinte ou qu'il y a eu une erreur.
 
-```C
+```c
 #include <stdio .h>
 
 void main(void)
@@ -87,7 +97,7 @@ void main(void)
   fp = fopen("donnes.rxr", "r");
   ...
   c = fgetc(fp);
-  printf ("Caractere lu dans le fichier : %c", c) ;
+  printf ("Caractère lu dans le fichier : %c", c) ;
   ...
   fclose (fp);
 }
@@ -95,13 +105,13 @@ void main(void)
 
 ### Écriture en mode caractère (fichiers ASCII)
 
-```C
+```c
 int fputc(int caractere, FILE *pointeurFichier);
 ```
 
 La fonction fputc transfère un caractère dans le fichier pointé par pointeur Fichier. La fonction retourne le caractère écrit si pas d'erreur, et EOF s'il y a eu une erreur.
 
-```C
+```c
 #include <stdio .h>
 
 void main(void)
@@ -116,14 +126,16 @@ void main(void)
 }
 ```
 
-```C
+### Lecture en mode caractère (fichiers ASCII)
+
+```c
 char *fgets(char *pointeurTampon, int nombre, FILE *pointeurFichier);
 ```
 
 La fonction fgets lit dans un fichier, à partir de la position courante, un certain nombre de caractères et les range à l'emplacement pointé par pointeur Tampon.
 La fonction s'arrête si un saut de ligne '\n' a été lu, si nombre − 1 caractères ont été lus, ou si la fin de fichier a été atteinte.
 
-```C
+```c
 # include <stdio .h>
 
 void main(void)
@@ -138,13 +150,15 @@ void main(void)
 }
 ```
 
-```C
+### Écriture en mode chaine de caractères (fichiers ASCII)
+
+```c
 char *fputs(char *pointeurTampon, FILE *pointeurFichier);
 ```
 
 La fonction fputs écrit une chaîne de caractères dans un fichier à partir de la position courante. La fonction retourne une valeur positive si pas d'erreur, et EOF s'il y a eu une erreur.
 
-```C
+```c
 #include <stdio .h>
 
 void main(void)
@@ -159,57 +173,71 @@ void main(void)
 }
 ```
 
-```C
+### Lecture en mode chaine de caractères (fichiers ASCII)
+
+```c
 int fscanf(FILE *pointeurFichier, char *chaineFormatee);
 ```
 
 La fonction fscanf lit des données dans un fichier en les formatant. Elle retourne le nombre de données correctement lues si pas d'erreur. La valeur de retour EOF signifie fin de fichier ou erreur.
 
-```C
+Exemple d'utilisation
+
+```c
 #include <stdio .h>
 
 void main(void)
 {
   FILE *fp;
+  fp = fopen("donnees.txt", "r");
+  ...
   long numero ;
   char nom[30];
   long cp;
   char ville[30];
-  fp = fopen("donnees.txt", "r");
-  ...
   fscanf(fp ,"%ld %s %ld %s" ,&numero ,nom ,&cp , ville );
   ...
   fclose(fp);
 }
 ```
 
+```c
 int fprintf(FILE *pointeurFichier, char *chaineFormatee);
+```
 
 La fonction fprintf écrit des données dans un fichier en les formatant. Elle retourne le nombre de données correctement écrites si pas d'erreur. La valeur de retour EOF signifie erreur.
 
-```C
+Exemple d'utilisation
+
+```c
 #include <stdio .h>
 
-void main(void)
+void main()
 {
   FILE *fp;
+  fp = fopen("donnees.dat", "w");
+  ...
   long numero = 1253;
   char nom [] = "Dupont ";
   long cp = 88100;
   char ville [] = "Saint Die";
-  fp = fopen("donnees.dat", "w");
-  ...
   fprintf (fp ,"%ld %s %ld %s", numero ,nom , cp, ville) ;
   ...
   fclose (fp);
 }
 ```
 
+### Lecture en mode binaire
+
+```c
 int fread(void *pointeurTampon, size t taille, size t nombre, FILE *pointeurFichier);
+```
 
 La fonction fread lit un bloc de données de taille x nombre octets et le range à l'emplacement référencé par pointeurTampon. Elle retourne le nombre d'objets complètement lus. Si la valeur est inférieure à nombre, alors il y a une erreur.
 
-```C
+Exemple d'utilisation
+
+```c
 #include <stdio .h>
 
 void main(void)
@@ -224,14 +252,20 @@ void main(void)
 }
 ```
 
+### Écriture en mode binaire
+
+```c
 int fwrite(void *pointeurTampon, size t taille, size t nombre,
 FILE *pointeurFichier);
+```
 
 La fonction fwrite écrit un bloc de données de taille x nombre octets rangé à l'emplacement référencé par pointeurTampon dans le fichier pointé par pointeur Fichier. Elle retourne le nombre d'objets complètement écrits.
 
 Si la valeur est inférieure à nombre, alors il y a une erreur.
 
-```C
+Exemple d'utilisation
+
+```c
 #include <stdio .h>
 void main(void)
 {
@@ -244,9 +278,13 @@ void main(void)
   fclose (fp);
 ```
 
+### Déplacement
+
 Jusqu'à présent, nous avons supposé un accès séquentiel au données.
 
+```c
 int fseek(FILE *pointeurFichier, long offset, int base);
+```
 
 La fonction fseek permet de placer le pointeur de fichier sur un octet quelconque du fichier.
 
@@ -261,15 +299,20 @@ fseek (fp ,0 ,0) ; /* on se place au début du fichier */
 ...
 fseek (fp , -3 , SEEK_END ) ; /* on se place 3 octets avant la fin du fichier */
 
+```c
 long ftell(FILE *pointeurFichier);
+```
 
 La fonction ftell permet de connaître l'octet du fichier sur lequel pointe le pointeur de fichier.
 
 La fonction retourne, sous forme de valeur long, la position actuelle du pointeur de fichier relativement au début du fichier, ou -1 en cas d'erreur.
 
-```C
+Exemple d'utilisation
+
+```c
 #include <stdio .h>
-void main(void)
+
+void main()
 {
   FILE *fp;
   long position ;
