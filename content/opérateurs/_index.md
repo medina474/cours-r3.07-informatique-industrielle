@@ -9,16 +9,16 @@ draft: false
 
 ## Opérateurs de signe
 
-Supposons que la variable **a** a pour valeur 7
+Supposons que la variable **age** a comme valeur 7.
 
 Opérateur |	Description |	Exemple
 ---|---|---
-\+	 | positif	 |	a + -5 = 2
-\−	 | inversion de signe	 |	a − +5 = 2
+\+	 | positif	 |	age + -5 = 2
+−	 | inversion de signe	 |	age − +5 = 2
 
 ## Opérateurs arithmétiques
 
-Supposons que la variable **a** a pour valeur 7 et que la variable **b** la valeur 19 alors :
+Supposons que la variable **a** a comme valeur 7 et que la variable **b** la valeur 19 alors :
 
 Opérateur |	Description |	Exemple
 ---|---|---
@@ -28,11 +28,11 @@ Opérateur |	Description |	Exemple
 /	 | Division	 |	b / a = 2
 %	 | Modulo, reste de la division entière	|	b % a = 5
 ++ | Opérateur d'incrémentation<br>augmente la valeur entière de 1. | a++ = 8
--- | Opérateur de décrémentation<br>diminue la valeur entière de 1. | a\-\- = 6
+\-\- | Opérateur de décrémentation<br>diminue la valeur entière de 1. | a\-\- = 6
 
 ## Opérateurs relationnels
 
-Supposons que la variable **a** a pour valeur 7 et que la variable **b** la valeur 19 alors :
+Supposons que la variable **a** a comme valeur 7 et que la variable **b** la valeur 19 alors :
 
 Opérateur |	Description |	Exemple
 ---|---|---
@@ -55,7 +55,7 @@ Opérateur |	Description |	Exemple
 \|\|	| **OU logique**. Si l'un des deux opérandes est différent de zéro, la condition devient vraie. | a \|\| b est vrai.
 !	| **NON logique**. Il est utilisé pour inverser l'état logique de son opérande. Si une condition est vraie, alors l'opérateur logique NON la rendra fausse. | !(a && b) est vrai.
 
-En savoir plus sur les [opérateurs logiques](logique)
+> En savoir plus sur les [opérateurs logiques](logique)
 
 ## Opérateurs bit-à-bit
 
@@ -70,17 +70,6 @@ a	| b	| a & b	| a \| b | a ^ b
 
 Supposons que la variable **a** a pour valeur 60 et que la variable **b** la valeur 13 alors :
 
-a = 0011 1100\
-b = 0000 1101
-
-
-a&b = 0000 1100
-a|b = 0011 1101
-a^b = 0011 0001
-~a = 1100 0011
-
-Supposons que la variable **a** a pour valeur 60 et que la variable **b** la valeur 13 alors :
-
 
 Opérateur |	Description |	Exemple
 ---|---|---
@@ -91,7 +80,8 @@ Opérateur |	Description |	Exemple
 \<\<	| Opérateur de **décalage binaire à gauche**. La valeur des opérandes de gauche est déplacée vers la gauche du nombre de bits spécifié par l'opérande de droite.	| a << 2 = 240 i.e., 1111 0000
 \>\>	| Opérateur de **décalage binaire vers la droite**. La valeur des opérandes de gauche est déplacée vers la droite du nombre de bits spécifié par l'opérande de droite.	| a >> 2 = 15 i.e., 0000 1111
 
-En savoir plus sur les [opérateurs bit-à-bit](bit)
+> En savoir plus sur les [opérateurs bit-à-bit](bit)
+{.info}
 
 ## Opérateurs d'affectation
 

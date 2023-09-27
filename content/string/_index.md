@@ -1,8 +1,18 @@
 ---
-title: "String"
+title: "Chaines de caractères"
 date: 2022-11-30T13:44:30+01:00
 draft: false
 ---
+
+En C, une chaîne de caractères est définie comme un tableau de caractères terminé par le caractère nul (`'\0'`). Le caractère nul indique la fin de la chaîne.
+
+```c
+char maChaine[] = "Bonjour"; // Déclaration et initialisation d'une chaîne de caractères
+char *maChaine2 = "Au revoir";
+```
+
+Dans l'exemple ci-dessus, nous avons déclaré une chaîne de caractères appelée `maChaine` et nous lui avons attribué la valeur "Bonjour". Lorsque vous initialisez une chaîne de caractères de cette manière, le compilateur C compte automatiquement le nombre de caractères dans la chaîne, y compris le caractère nul, et alloue suffisamment d'espace en mémoire pour stocker la chaîne.
+
 
 ## Saisie de chaine de caractères
 

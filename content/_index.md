@@ -14,6 +14,8 @@ Qu'est ce qu'un [programme](programme) en C ?
 
 [math](math)
 
+Le [temps](temps)
+
 [Chaines de caractères](string)
 
 [Fichiers](fichiers)
