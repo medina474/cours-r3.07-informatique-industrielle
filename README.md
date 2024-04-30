@@ -60,3 +60,12 @@ Variables structurées - librairies - liaison série - protocole - trame - micro
 ## Volume horaire :
 
 Volume horaire défini nationalement : 22 heures dont 20 heures de TP
+
+CM 2h - 13/09/2023
+TD 2h - 13/09/2023
+TD 2h - 20/09/2023
+TP 4h - 27/09/2023 (fichier csv)
+TP 4h - 04/10/2023
+TP 4h - 11/10/2023
+TP 4h - 18/10/2023
+TP 4h - 21/10/2023

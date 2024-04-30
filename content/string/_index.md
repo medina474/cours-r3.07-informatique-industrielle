@@ -4,7 +4,14 @@ date: 2022-11-30T13:44:30+01:00
 draft: false
 ---
 
-En C, une chaîne de caractères est définie comme un tableau de caractères terminé par le caractère nul (`'\0'`). Le caractère nul indique la fin de la chaîne.
+Une chaîne de caractères est définie comme un tableau de caractères délimité par le caractère nul (`'\0'`).
+Le caractère nul indique la fin de la chaîne.
+
+0|2|3|4|5|6|7|8|9
+---|---|---|---|---|---|---|---|---
+B|o|n|j|o|u|r||
+66|111|110|106|111|117|114|0|99
+
 
 ```c
 char maChaine[] = "Bonjour"; // Déclaration et initialisation d'une chaîne de caractères
